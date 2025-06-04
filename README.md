@@ -33,7 +33,7 @@ Each raw data file must include the following header information:
 #URL: [Full URL with http:// or https://]
 #Time: [Collection timestamp in DD-MM-YYYY HH:MM format]
 #Domain: [Content domain - tourism, technology, sports, general, etc.]
-         ➤ **If no domain fits, write:** `General`
+         ➤ If no domain fits, write: General
 
 [Your collected content starts here...]
 ```
