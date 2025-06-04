@@ -10,9 +10,7 @@ eg
 | NEP | Person | Atal Vihari Bajpayee |
 | NEL | Location | Arabian Sea, Indira Nagar |
 | NEO | Organization | NTPC, BJP, IIIT Hyderabad (earlier) |
-| NEDA | Date | 1st January 2023, January, 2020 |
 | NETI | Time/Duration | from 5 AM to 7 PM, last Sunday |
-| NETE | Domain Term *(dropped)* | T3, Databases *(if used in domain)* |
 | NEAR | Artifact | Wings of Fire, Windows XP, Taj Mahal |
 | NEN | Number | 5 crore |
 | NEF | Facility | RGIA, IIT, hospitals |
