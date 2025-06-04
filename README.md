@@ -1,179 +1,177 @@
-# IndicWiki Data Collection and Annotation Guidelines
+# IndicWiki Data Collection & Annotation Project
 
-Welcome to the IndicWiki Data repository! This README provides clear instructions on how to:
+This repository contains guidelines and workflows for collecting raw data from various sources and annotating them using NER (Named Entity Recognition) tagging for the IndicWiki project.
 
-1. Collect and format raw data files.
-2. Upload raw and annotated files to the GitHub repository.
-3. Organize files within the GitHub folder structure.
-4. Perform annotation using our annotation tool and tagging guidelines.
+## 📁 Repository Structure
 
----
-
-## 1. Raw Data Collection Format
-
-To maintain consistency, each raw text file must follow the naming convention and internal structure outlined below.
-
-### 1.1 File Naming Convention
 ```
-<source>_<topic_or_article_name>.txt
+IndicWiki_Project/
+└── Languages/
+    └── Your_Name/
+        ├── Raw/           # Upload raw collected data here
+        └── Annotated/     # Upload annotated files here
 ```
-- `<source>`: The origin of the text (e.g., `wiki`, `blog`, `news`).
-- `<topic_or_article_name>`: A concise descriptor of the content.
+
+## 📋 Raw Data Collection Guidelines
+
+### File Naming Convention
+
+**Format:** `<source>_<topic/article_name>.txt`
 
 **Examples:**
-- If the source is Wikipedia and the article is about Hyderabad tourism:
-  ```
-wiki_hyderabad.txt
-  ```
-- If the source is a blog and the article is about artificial intelligence:
-  ```
-blog_artificial_intelligence.txt
-  ```
+- Wikipedia Tourism page for Hyderabad: `wiki_hyderabad_tourism.txt`
+- Blog article on Artificial Intelligence: `blog_artificial_intelligence.txt`
+- News article on Cricket: `news_cricket_worldcup.txt`
 
-### 1.2 Inside Each File
-Each raw text file should begin with three metadata fields (URL, Time, Domain), followed by the actual content.
+### File Content Structure
+
+Each raw data file must include the following header information:
 
 ```
-URL: <full URL including http:// or https://>
-Time: <DD-MM-YYYY HH:MM>   # e.g., 04-06-2025 14:43
-Domain: <domain category>   # e.g., tourism, technology, sports, General
+URL: [Full URL with http:// or https://]
+Time: [Collection timestamp in DD-MM-YYYY HH:MM format]
+Domain: [Content domain - tourism, technology, sports, general, etc.]
 
-<Your article's content goes here...>
+[Your collected content starts here...]
 ```
 
 **Example:**
 ```
-URL: https://en.wikipedia.org/wiki/Hyderabad
+URL: https://en.wikipedia.org/wiki/Tourism_in_Hyderabad
 Time: 04-06-2025 14:43
-Domain: tourism
+Domain: Tourism
 
-Hyderabad is the capital of the southern Indian state of Telangana...
+Hyderabad, the capital city of Telangana, is known for its rich history...
 ```
 
-- **URL**: Copy the exact URL of the source article.
-- **Time**: Record the date and time at which you collected the data (format: DD-MM-YYYY HH:MM).
-- **Domain**: Specify the category or domain. If no specific domain applies, write `General`.
-- **Content**: The body text of the article.
+## 🚀 Getting Started
 
----
+### First Time Setup
 
-## 2. GitHub Repository Setup & Upload Instructions
-
-All contributors should use the `indicWiki` branch for uploading raw and annotated data.
-
-### 2.1 Cloning the Repository (First Time)
-1. Open your Terminal (or Git Bash).
-2. Run:
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/Soumyadip0806/indicWiki_Data.git
-   ```
-3. Navigate into the cloned folder:
-   ```bash
    cd indicWiki_Data
    ```
 
-### 2.2 Placing Your Files
-1. Within the `indicWiki_Data` root folder, locate the `Languages` directory.
-2. Inside `Languages`, create a new folder named after yourself (e.g., `Soumya`, `Alex`, `Priya`).
-3. Within your named folder, you will find two sub-folders: `Raw` and `Annotated`.
-   - **Raw**: Place all newly collected raw text files here.
-   - **Annotated**: Place finalized annotation files (after using the annotation tool) here.
+2. **Create your folder structure:**
+   - Navigate to `Languages/`
+   - Create a folder with your name
+   - Ensure you have both `Raw/` and `Annotated/` subfolders
 
-### 2.3 Uploading Changes to GitHub
-1. From the `indicWiki_Data` root folder, ensure you are on the `indicWiki` branch:
+3. **Set up Git branch:**
    ```bash
    git checkout indicWiki
    ```
-2. Add your new/modified files:
+
+### Uploading Raw Data Files
+
+1. **Place your files:**
+   - Put your collected raw data files in `Languages/Your_Name/Raw/`
+   - Follow the naming convention and content structure
+
+2. **Commit and push:**
    ```bash
    git add .
-   ```
-3. Commit with a clear, understandable message describing your changes (e.g., `Add raw tourism data for Hyderabad`):
-   ```bash
-   git commit -m "<Your commit message>"
-   ```
-4. Push to the `indicWiki` branch:
-   ```bash
+   git commit -m "Add raw data files: [brief description of files added]"
    git push origin indicWiki
    ```
 
-> **Note:** If you encounter any merge conflicts, please resolve them locally before pushing. Use `git pull origin indicWiki` to fetch the latest changes first.
+## 🏷️ Annotation Process
 
----
+### Step 1: Prepare for Annotation
 
-## 3. GitHub Folder Structure
-
-```text
-indicWiki_Data/
-├── Languages/
-│   ├── <Your_Name>/
-│   │   ├── Raw/         # Place raw collected data files here
-│   │   └── Annotated/   # Place annotated files here
-│   └── <Other_Contributor_Names>/
-│       ├── Raw/
-│       └── Annotated/
-└── README.md            # This file
-```
-
-- **Languages/**: Root directory for all language contributors.
-- **<Your_Name>/**: A personal folder for each contributor (replace `<Your_Name>` with your actual name).
-- **Raw/**: Sub-folder for uploading raw, unannotated text files.
-- **Annotated/**: Sub-folder for uploading NER-annotated files after using the annotation tool.
-
----
-
-## 4. Annotation Workflow
-
-To annotate raw text files with NER tags, follow the steps below.
-
-### 4.1 Cloning or Pulling Latest Changes
-1. If you have not cloned the repository yet, follow Section 2.1.
-2. If you already have a local copy, navigate to the `indicWiki_Data` folder and run:
+1. **Update your local repository:**
    ```bash
-   git checkout indicWiki
    git pull origin indicWiki
    ```
 
-### 4.2 Selecting Files to Annotate
-1. Go to your named folder under `Languages/<Your_Name>/Raw/`.
-2. Choose a raw text file (e.g., `wiki_hyderabad.txt`) that you want to annotate.
+2. **Locate your raw files:**
+   - Navigate to `Languages/Your_Name/Raw/`
+   - Select files that need annotation
 
-### 4.3 Using the Annotation Tool
-1. Open your web browser and navigate to the annotation tool:
-   > **Annotation Tool:** [Headline Annotator](https://plural.iiit.ac.in/headline-annotator/)
-2. Upload your selected raw text file.
-3. For each word or word span:
-   - Select the appropriate NER tag (e.g., `b-PER`, `i-LOC`, etc.).
-   - Annotate entities consistently following the Tag Guideline.
-4. After completing all annotations, download the annotated file.
+### Step 2: Using the Annotation Tool
 
-### 4.4 Saving and Uploading Annotated Files
-1. Move the downloaded annotated file into your `Languages/<Your_Name>/Annotated/` folder.
-2. Return to the `indicWiki_Data` root folder in your terminal:
+1. **Access the tool:**
+   - Open [Annotation Tool](https://plural.iiit.ac.in/headline-annotator/) in your browser
+
+2. **Upload and annotate:**
+   - Upload your raw data file
+   - Select words or word spans
+   - Apply appropriate NER tags according to guidelines
+   - Download the annotated file when complete
+
+3. **Tag Guidelines:**
+   - Refer to `guideline.pdf` in the project folder for detailed tagging instructions
+   - Ensure consistency in tag application
+
+### Step 3: Upload Annotated Files
+
+1. **Save annotated files:**
+   - Place downloaded annotated files in `Languages/Your_Name/Annotated/`
+   - Keep the same filename with appropriate suffix if needed
+
+2. **Commit changes:**
    ```bash
-   cd ../../               # Adjust path if needed
+   git pull origin indicWiki  # Always pull before pushing
    git add .
-   git commit -m "Add annotated NER data for <Filename>"
+   git commit -m "Add annotated files: [description of annotated content]"
    git push origin indicWiki
    ```
 
-> **Tip:** Always run `git pull origin indicWiki` before starting new annotations to ensure you have the latest version of the repository.
+## 📝 Best Practices
+
+### Commit Messages
+- Use clear, descriptive commit messages
+- Examples:
+  - `Add raw data: Wikipedia articles on Indian festivals`
+  - `Update annotations: Tourism content for major Indian cities`
+  - `Fix formatting: Corrected header structure in technology articles`
+
+### File Organization
+- Keep raw and annotated files organized in respective folders
+- Use consistent naming conventions
+- Maintain proper file headers with metadata
+
+### Quality Assurance
+- Always review your annotations before uploading
+- Follow the tag guidelines strictly
+- Ensure URL accessibility and accuracy
+
+## 🔗 Important Links
+
+- **Repository:** https://github.com/Soumyadip0806/indicWiki_Data.git
+- **Annotation Tool:** https://plural.iiit.ac.in/headline-annotator/
+- **Tag Guidelines:** `guideline.pdf` (in project folder)
+- **Working Branch:** `indicWiki`
+
+## ❓ Troubleshooting
+
+### Common Issues
+
+1. **Git conflicts:**
+   ```bash
+   git pull origin indicWiki
+   # Resolve conflicts manually
+   git add .
+   git commit -m "Resolve merge conflicts"
+   git push origin indicWiki
+   ```
+
+2. **File upload issues:**
+   - Ensure you're in the correct directory
+   - Check file naming conventions
+   - Verify branch is set to `indicWiki`
+
+3. **Annotation tool problems:**
+   - Clear browser cache
+   - Try a different browser
+   - Ensure stable internet connection
+
+## 📞 Support
+
+For technical issues or questions about the annotation process, please reach out to the project maintainers or create an issue in the repository.
 
 ---
 
-## 5. Tagging Guidelines
-
-- Detailed tagging guidelines can be found in the `guideline.pdf` file located in the `Tag_Guideline/` folder at the repository root.
-- Please review the guidelines carefully to ensure consistent annotation across all contributors.
-
----
-
-## 6. Additional Notes
-
-- If you discover any issues with file naming, formatting, or annotation, please open an issue on GitHub or reach out to the repository owner.
-- For questions about the annotation schema or tags, refer to the `guideline.pdf` or contact the annotation team.
-- Always keep your local `indicWiki` branch up to date with the remote repository to minimize conflicts.
-
----
-
-Thank you for contributing to the IndicWiki Data project! Your efforts are essential in building high-quality NER and language resources for Indic languages.
+**Remember:** Always pull the latest changes before making new commits to avoid conflicts!
