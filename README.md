@@ -149,7 +149,7 @@ Hyderabad, the capital city of Telangana, is known for its rich history...
 - **Repository:** [Repo](https://github.com/Soumyadip0806/indicWiki_Data.git)
 - **Annotation Tool:** [Tool](https://plural.iiit.ac.in/headline-annotator/)
 - **Tag Guidelines:** [Tag Guideline](https://github.com/Soumyadip0806/indicWiki_Data/blob/indicWiki/NER_Guideline.pdf)
-- **Working Branch:** `[indicWiki](https://github.com/Soumyadip0806/indicWiki_Data/tree/indicWiki)`
+- **Working Branch:** [indicWiki](https://github.com/Soumyadip0806/indicWiki_Data/tree/indicWiki)
 
 ## ❓ Troubleshooting
 
