@@ -12,6 +12,8 @@ IndicWiki_Project/
         └── Annotated/     # Upload annotated files here
 ```
 
+
+
 ## 📋 Raw Data Collection Guidelines
 
 ### File Naming Convention
@@ -28,25 +30,26 @@ IndicWiki_Project/
 Each raw data file must include the following header information:
 
 ```
-URL: [Full URL with http:// or https://]
-Time: [Collection timestamp in DD-MM-YYYY HH:MM format]
-Domain: [Content domain - tourism, technology, sports, general, etc.]
+#URL: [Full URL with http:// or https://]
+#Time: [Collection timestamp in DD-MM-YYYY HH:MM format]
+#Domain: [Content domain - tourism, technology, sports, general, etc.]
+         ➤ If no domain fits, write: General
 
 [Your collected content starts here...]
 ```
 
 **Example:**
 ```
-URL: https://en.wikipedia.org/wiki/Tourism_in_Hyderabad
-Time: 04-06-2025 14:43
-Domain: Tourism
+#URL: https://en.wikipedia.org/wiki/Tourism_in_Hyderabad
+#Time: 04-06-2025 14:43
+#Domain: Tourism
 
 Hyderabad, the capital city of Telangana, is known for its rich history...
 ```
 
 ## 🚀 Getting Started
 
-### First Time Setup
+### First Time GitHub Setup
 
 1. **Clone the repository:**
    ```bash
@@ -54,15 +57,18 @@ Hyderabad, the capital city of Telangana, is known for its rich history...
    cd indicWiki_Data
    ```
 
-2. **Create your folder structure:**
+2. **Set up Git branch:**
+   ```bash
+   git checkout indicWiki
+   ```
+
+3. **Create your folder structure:**
    - Navigate to `Languages/`
    - Create a folder with your name
    - Ensure you have both `Raw/` and `Annotated/` subfolders
 
-3. **Set up Git branch:**
-   ```bash
-   git checkout indicWiki
-   ```
+
+
 
 ### Uploading Raw Data Files
 
@@ -140,10 +146,10 @@ Hyderabad, the capital city of Telangana, is known for its rich history...
 
 ## 🔗 Important Links
 
-- **Repository:** https://github.com/Soumyadip0806/indicWiki_Data.git
-- **Annotation Tool:** https://plural.iiit.ac.in/headline-annotator/
-- **Tag Guidelines:** `guideline.pdf` (in project folder)
-- **Working Branch:** `indicWiki`
+- **Repository:** [Repo](https://github.com/Soumyadip0806/indicWiki_Data.git)
+- **Annotation Tool:** [Tool](https://plural.iiit.ac.in/headline-annotator/)
+- **Tag Guidelines:** [Tag Guideline](https://github.com/Soumyadip0806/indicWiki_Data/blob/indicWiki/NER_Guideline.pdf)
+- **Working Branch:** [indicWiki](https://github.com/Soumyadip0806/indicWiki_Data/tree/indicWiki)
 
 ## ❓ Troubleshooting
 
@@ -170,7 +176,7 @@ Hyderabad, the capital city of Telangana, is known for its rich history...
 
 ## 📞 Support
 
-For technical issues or questions about the annotation process, please reach out to the project maintainers or create an issue in the repository.
+If you have any doubt then please ask to [github issues](https://github.com/Soumyadip0806/indicWiki_Data/issues) section.
 
 ---
 
