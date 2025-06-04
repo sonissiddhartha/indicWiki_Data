@@ -2,6 +2,23 @@
 
 This repository contains guidelines and workflows for collecting raw data from various sources and annotating them using NER (Named Entity Recognition) tagging for the IndicWiki project.
 
+NER tags
+eg
+
+| Tag | Category | Example |
+| --- | --- | --- |
+| NEP | Person | Atal Vihari Bajpayee |
+| NEL | Location | Arabian Sea, Indira Nagar |
+| NEO | Organization | NTPC, BJP, IIIT Hyderabad (earlier) |
+| NEDA | Date | 1st January 2023, January, 2020 |
+| NETI | Time/Duration | from 5 AM to 7 PM, last Sunday |
+| NETE | Domain Term *(dropped)* | T3, Databases *(if used in domain)* |
+| NEAR | Artifact | Wings of Fire, Windows XP, Taj Mahal |
+| NEN | Number | 5 crore |
+| NEF | Facility | RGIA, IIT, hospitals |
+| NEU | URL | [https://www.iiit.ac.in](https://www.iiit.ac.in/) |
+| NEMI | Miscellaneous | President, Padma Bhushan, Hindi |
+
 ## 📁 Repository Structure
 
 ```
