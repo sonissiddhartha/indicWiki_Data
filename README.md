@@ -99,7 +99,7 @@ Hyderabad, the capital city of Telangana, is known for its rich history...
 ### Step 2: Using the Annotation Tool
 
 1. **Access the tool:**
-   - Open [Annotation Tool](https://plural.iiit.ac.in/headline-annotator/) in your browser
+   - Open [Annotation Tool](https://plural.iiit.ac.in/ner-annotator/) in your browser
 
 2. **Upload and annotate:**
    - Upload your raw data file
@@ -147,7 +147,7 @@ Hyderabad, the capital city of Telangana, is known for its rich history...
 ## 🔗 Important Links
 
 - **Repository:** [Repo](https://github.com/Soumyadip0806/indicWiki_Data.git)
-- **Annotation Tool:** [Tool](https://plural.iiit.ac.in/headline-annotator/)
+- **Annotation Tool:** [Tool](https://plural.iiit.ac.in/ner-annotator/)
 - **Tag Guidelines:** [Tag Guideline](https://github.com/Soumyadip0806/indicWiki_Data/blob/indicWiki/NER_Guideline.pdf)
 - **Working Branch:** [indicWiki](https://github.com/Soumyadip0806/indicWiki_Data/tree/indicWiki)
 
