@@ -1,0 +1,3 @@
+#URL google.com
+#DATE 05.06.2025
+#TEXT HI HOW ARE YOU?
