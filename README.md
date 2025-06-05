@@ -17,7 +17,6 @@ eg
 | NEU | URL | [https://www.iiit.ac.in](https://www.iiit.ac.in/) |
 | NEMI | Miscellaneous | President, Padma Bhushan, Hindi |
 
-
 ## 📁 Repository Structure
 
 ```
