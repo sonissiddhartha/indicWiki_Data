@@ -1,0 +1,29 @@
+File Naming Convention
+Format: <source>_<topic/article_name>.txt
+
+Examples:
+
+Wikipedia Tourism page for Hyderabad: wiki_hyderabad_tourism.txt
+Blog article on Artificial Intelligence: blog_artificial_intelligence.txt
+News article on Cricket: news_cricket_worldcup.txt
+
+
+File Content Structure
+Each raw data file must include the following header information:
+
+#URL: [Full URL with http:// or https://]
+#Time: [Collection timestamp in DD-MM-YYYY HH:MM format]
+#Domain: [Content domain - tourism, technology, sports, general, etc.]
+         ➤ If no domain fits, write: General
+[Your collected content starts here...]
+
+
+
+
+Example:
+
+#URL: https://en.wikipedia.org/wiki/Tourism_in_Hyderabad
+#Time: 04-06-2025 14:43
+#Domain: Tourism
+
+Hyderabad, the capital city of Telangana, is known for its rich history...
